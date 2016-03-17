@@ -1,0 +1,131 @@
+﻿.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-transform: uppercase;
+}
+
+.splash .icon-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.page-host {
+    position: relative;
+    top: 10px;
+}
+
+.navbar-fixed-top .navbar-inner {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar-fixed-top .icon-home {
+    font-size: 18px
+}
+
+.loader {
+    margin: 6px 8px 4px 8px;
+    visibility: hidden;
+}
+
+.loader.active {
+    visibility: visible;
+}
+
+@media (max-width: 979px) {
+    .page-host {
+        top: 0;
+    }
+
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
+}
+
+body {
+    background: url('images/background.png');
+}
+
+.containerdetails {
+    /*#0a565c #debb27  #fff* #d59521  #e3e3e3  #4d3a7d  #df6e1e #debb27 #48ca3b*/
+    background-color:#fff;
+    padding: 10px;
+    margin: 0px ; /* negative indent the amount of the padding to maintain the grid system */
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.containerdetails .col-md-4 {
+        min-height: 600px;
+  }
+
+.containerdetails .col-md-8 {
+        margin-left: 0px;
+        padding-left: 19px;
+        border-left: 1px solid #0094ff;
+        min-height: 600px;
+}
+
+.col-mar-left{
+        margin-left:20px
+}
+.col-mar-right{
+        margin-right:60px;
+}
+
+  /*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+/* Common styles for all types */
+.bs-callout {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Variations */
+.bs-callout-danger {
+  background-color: #fdf7f7;
+  border-color: #eed3d7;
+}
+.bs-callout-danger h4 {
+  color: #b94a48;
+}
+.bs-callout-warning {
+  background-color: #faf8f0;
+  border-color: #faebcc;
+}
+.bs-callout-warning h4 {
+  color: #c09853;
+}
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #bce8f1;
+}
+.bs-callout-info h4 {
+  color: #3a87ad;
+}
+

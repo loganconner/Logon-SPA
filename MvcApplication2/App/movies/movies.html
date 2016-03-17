@@ -1,0 +1,42 @@
+﻿<div class="containerdetails">
+    <section>
+        <h2 class="page-header">
+            <span data-bind="text:title"></span>
+        </h2>
+
+    </section>
+    <table class="table table-condensed table-responsive">
+        <thead>
+            <tr>
+                
+                <td>MovieTitle</td>
+                <td>Release Date</td>
+                <td>Quantity</td>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: moviesModel.pageList">
+            <tr>
+
+               
+                <td data-bind="text: movieTitle"></td>
+                <td data-bind="text: releaseDate"></td>
+                <td data-bind="text: quantity"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <div>
+        <!-- ko if: moviesModel.dataSource().length > moviesModel.pageSize() -->
+        <div>
+            <ul class="pager">
+                <li data-bind="css: { disabled: moviesModel.pageIndex() === 0 }">
+                    <a href="#" data-bind="click: moviesModel.previousPage">Previous</a>
+                </li>
+                <li data-bind="css: { disabled: moviesModel.pageIndex() === moviesModel.maxPageIndex() }">
+                    <a href="#" data-bind="click: moviesModel.nextPage">Next</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
